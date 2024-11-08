@@ -12,7 +12,7 @@ func main() {
 	// Retrieve and print the first document in the 'user' collection
 	firstUser, err := db.GetFirstDocument()
 	if err != nil {
-		fmt.Printf("Error retrieving first document: %v\n", err)
+		fmt.Printf("Error retrieving first documents: %v\n", err)
 		return
 	}
 
