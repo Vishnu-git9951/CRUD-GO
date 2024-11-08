@@ -12,12 +12,12 @@ func main() {
 	// Retrieve and print the first document in the 'user' collection
 	firstUser, err := db.GetFirstDocument()
 	if err != nil {
-		fmt.Printf("Error retrieving first document: %v\n", err)
+		fmt.Printf("Error retrieving first documents: \n", err)
 		return
 	}
 
 	if firstUser != nil {
-		fmt.Printf("First user document: %+v\n\n", firstUser.Name)
+		fmt.Printf("First user document: \n\n", firstUser.Name)
 	} else {
 		fmt.Println("No documents found in the 'user' collection.")
 	}
@@ -25,7 +25,7 @@ func main() {
 	// Get and print the total document count in the 'user' collection
 	totalCount, err := db.GetTotalDocumentCount("user")
 	if err != nil {
-		fmt.Printf("Error counting documents: %v\n", err)
+		fmt.Printf("Error counting documents: \n", err)
 		return
 	}
 	fmt.Printf("Total document count in 'user' collection: %d\n", totalCount)
